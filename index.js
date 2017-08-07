@@ -126,7 +126,7 @@
 
                 *${new Date()}*`
 
-        if (lastMsg.toUpperCase().indexOf('@JOKE') > -1)
+        if (lastMsg.toUpperCase().indexOf('@SERVICE') > -1)
             sendText = serviceList[rand(serviceList.length - 1)]
 
         // that's sad, there's not to send back...
