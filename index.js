@@ -5,27 +5,18 @@
     //const whitelist = ['Fotos salvass', 'Teste ignore']
     const ignoreLastMsg = {}
 
-    const jokeList = [
+    const serviceList = [
         `
-        Husband and Wife had a Fight.
-        Wife called Mom : He fought with me again,
-        I am coming to you.
-        Mom : No beta, he must pay for his mistake,
-        I am comming to stay with U!`,
+        sgsgs gsag sg sagt sggg`,
 
         `
-        Husband: Darling, years ago u had a figure like Coke bottle.
-        Wife: Yes darling I still do, only difference is earlier it was 300ml now it's 1.5 ltr.`,
+        ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok ok .`,
 
         `
-        God created the earth, 
-        God created the woods, 
-        God created you too, 
-        But then, even God makes mistakes sometimes!`,
+        bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla bla `,
 
         `
-        What is a difference between a Kiss, a Car and a Monkey? 
-        A kiss is so dear, a car is too dear and a monkey is U dear.`
+        test test test test test test test test test test test test .`
     ]
 
 
@@ -127,7 +118,7 @@
                 Cool ${title}! Some commands that you can send me:
 
                 1. *@TIME*
-                2. *@JOKE*`
+                2. *@SERVICE*`
 
         if (lastMsg.toUpperCase().indexOf('@TIME') > -1)
             sendText = `
@@ -136,7 +127,7 @@
                 *${new Date()}*`
 
         if (lastMsg.toUpperCase().indexOf('@JOKE') > -1)
-            sendText = jokeList[rand(jokeList.length - 1)]
+            sendText = serviceList[rand(serviceList.length - 1)]
 
         // that's sad, there's not to send back...
         if (!sendText) {
